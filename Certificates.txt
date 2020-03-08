@@ -6,3 +6,14 @@ keytool -list -keystore $JAVA_HOME/lib/security/cacerts
 keytool -import -trustcacerts -file [certificate] -alias [alias] -keystore $JAVA_HOME/lib/security/cacerts
 
 -Djavax.net.ssl.trustStore=/app/security/truststore.jks
+
+
+http://java-buddy.blogspot.com/2016/07/java-example-of-ssl-server-and-client.html
+
+
+
+https://www.snaplogic.com/glossary/two-way-ssl-java-example
+
+https://www.baeldung.com/java-ssl
+
+https://github.com/AlphaGarden/SSL-Client-Server
