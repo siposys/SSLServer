@@ -1,3 +1,4 @@
+package Server;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -19,6 +20,7 @@ public class SSLServer
     System.setProperty("javax.net.ssl.keyStorePassword", "JsEkey@4");
     try
     {
+    	System.out.println("Server Started with Port 4443.\n");
       SSLServerSocketFactory sslServerSocketfactory = (SSLServerSocketFactory)SSLServerSocketFactory.getDefault();
       SSLServerSocket sslServerSocket = (SSLServerSocket)sslServerSocketfactory.createServerSocket(intSSLport);
       SSLSocket sslSocket = (SSLSocket)sslServerSocket.accept();
